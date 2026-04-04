@@ -68,7 +68,7 @@ The builder supports **two deployment modes**:
 
 ## 🎥 Demo Video
 
-[![Watch SKYNET Demo](screenshots/video.png)](https://t.me/burnwpcommunity/12975)
+[![Watch SKYNET Demo](screenshots/video.png)](https://t.me/burnwpcommunity/14254)
 ---
 
 ## 🚀 Quick Start
