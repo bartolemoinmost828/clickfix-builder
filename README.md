@@ -15,7 +15,7 @@ The builder supports **two deployment modes**:
 
 | Mode | Description |
 |------|-------------|
-| 📦 **Portable File** | Single HTML/JS file that works offline |
+| 📦 **Portable File** | Single Generate Stub/HTML/JS file |
 | 🌐 **VPS Deploy** | HTTP server with logging, blocking, and monitoring |
 
 ---
